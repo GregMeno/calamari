@@ -27,8 +27,9 @@ pip_pkgs:
     - user: {{ pillar['username'] }}
     - bin_env: /home/{{ pillar['username'] }}/calamari/env
     - activate: true
-    - requirements: /home/{{ pillar['username'] }}/calamari/requirements/2.7/requirements.txt
-    - download_cache: /home/{{ pillar['username'] }}/pip_cache
+    - requirements: /home/vagrant/calamari/requirements/2.7/requirements.txt
+    - download_cache: /vagrant/pip_cache
+    - env_vars: SWIG_FEATURES=-cpperraswarn
     - require:
       - virtualenv: virtualenv
       - pip: pyzmq
