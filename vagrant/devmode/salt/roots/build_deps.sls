@@ -34,7 +34,7 @@ build_deps:
       - python-m2crypto
       - make
       - postgresql
-      - postgresql-server-dev
+      - postgresql-server-dev-all
       - python-pip
       - libevent-dev
       - libmysqlclient-dev
